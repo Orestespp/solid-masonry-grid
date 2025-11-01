@@ -6,8 +6,10 @@ export default defineConfig({
     dts: true,
     clean: true,
     esbuildOptions(options) {
-        // 👇 esta es la forma moderna y compatible
-        options.jsx = 'preserve';
+        // Usa el transformador JSX de Solid
+        options.jsx = 'transform';
+        options.jsxFactory = 'h';
+        options.jsxFragment = 'Fragment';
         options.jsxImportSource = 'solid-js';
     },
 });

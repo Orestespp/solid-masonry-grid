@@ -3,17 +3,10 @@
     "version": "0.1.7",
     "description": "A lightweight, responsive Masonry Grid component for SolidJS.",
     "license": "MIT",
-    "type": "module",
     "exports": {
         ".": {
-            "import": {
-                "types": "./dist/index.d.ts",
-                "default": "./dist/index.js"
-            },
-            "require": {
-                "types": "./dist/index.d.ts",
-                "default": "./dist/index.cjs"
-            }
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
         }
     },
     "main": "dist/index.cjs",
@@ -30,7 +23,7 @@
     "scripts": {
         "dev": "vite",
         "start": "vite",
-        "build": "tsup",
+        "build": "tsup src/index.ts --format esm,cjs --dts --clean",
         "preview": "vite preview",
         "test": "vitest"
     },
@@ -50,6 +43,7 @@
         "tsup": "^8.0.0",
         "typescript": "^5.0.0",
         "vite": "^6.4.1",
-        "vite-plugin-solid": "^2.11.10"
+        "vite-plugin-solid": "^2.11.10",
+        "vitest": "^2.1.3"
     }
 }

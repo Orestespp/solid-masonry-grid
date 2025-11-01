@@ -1,27 +1,14 @@
 {
   "compilerOptions": {
-    /* Opciones de Tipado y Módulos */
-    "target": "ESNext", // Compila a la última versión de JS
-    "module": "ESNext", // Usa módulos ES para el código fuente
-    "moduleResolution": "bundler", // Resuelve módulos con el algoritmo de Node
-
-    /* Opciones de Solid y JSX */
-    "jsx": "preserve", // Mantén el JSX, tsup/babel lo transformarán (o "react-jsx" con el 'jsxImportSource')
-    "jsxImportSource": "solid-js", // Importa 'solid-js/jsx-runtime' para JSX
-
-    /* Opciones Estrictas y Calidad de Código */
-    "strict": true, // Habilita todas las opciones de chequeo estricto (RECOMENDADO)
-    "esModuleInterop": true, // Permite imports estilo CommonJS/ESM
-    "skipLibCheck": true, // No verifica los archivos de tipo de las librerías de terceros (acelera el proceso)
-    "forceConsistentCasingInFileNames": true, // Asegura el uso correcto de mayúsculas/minúsculas en los nombres de archivo
-
-    /* Opciones de Salida (Ignoradas por tsup, pero útiles para IDEs) */
-    "declaration": true, // Genera archivos .d.ts
-    "outDir": "dist", // Directorio de salida (tsup lo manejará, pero es buena práctica)
-
-    /* Otras */
-    "resolveJsonModule": true // Permite importar archivos .json
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "declaration": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*"], // Incluye todos los archivos en src
-  "exclude": ["node_modules", "dist"] // Excluye carpetas que no deben ser compiladas
+  "include": ["src"]
 }

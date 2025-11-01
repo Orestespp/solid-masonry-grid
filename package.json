@@ -1,0 +1,37 @@
+{
+    "name": "solid-masonry-grid",
+    "version": "0.1.1",
+    "description": "Un grid Masonry minimalista y responsive para SolidJS.",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "start": "vite",
+        "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+        "preview": "vite preview",
+        "test": "vitest"
+    },
+    "keywords": [
+        "solid",
+        "solidjs",
+        "masonry",
+        "grid",
+        "responsive",
+        "layout"
+    ],
+    "peerDependencies": {
+        "solid-js": "^1.9.0"
+    },
+    "devDependencies": {
+        "solid-js": "^1.9.10",
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0",
+        "vite": "^6.4.1",
+        "vite-plugin-solid": "^2.11.10"
+    }
+}

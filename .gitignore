@@ -1,0 +1,33 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Build outputs
+dist/
+.vite/
+.cache/
+.solid/
+*.tsbuildinfo
+
+# Playground o pruebas locales
+playground/
+_playground/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Env
+.env
+.env.*.local
+
+# Paquetes
+*.tgz
+
+# Logs otros gestores de paquetes
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

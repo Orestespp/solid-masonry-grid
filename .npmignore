@@ -1,0 +1,17 @@
+# Excluir tests y playground
+playground/
+_playground/
+
+# Config y herramientas locales
+vite.config.ts
+tsconfig.json
+.gitignore
+.git/
+.vscode/
+.idea/
+
+# Archivos temporales
+node_modules/
+dist-playground/
+.vite/
+cache/

@@ -4,12 +4,11 @@ export default defineConfig({
     entry: ["src/index.ts"],
     format: ["esm", "cjs"],
     dts: true,
+    sourcemap: true,
     clean: true,
-    target: "esnext",
-    jsx: "preserve", // ⬅️ deja que Solid controle el JSX
+    external: ["solid-js"],
     esbuildOptions(options) {
-        // ✅ Asegura que SolidJS maneje JSX correctamente
-        options.jsxImportSource = "solid-js";
         options.jsx = "automatic";
+        options.jsxImportSource = "solid-js";
     },
 });

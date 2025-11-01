@@ -1,17 +1,18 @@
 {
     "name": "solid-masonry-grid",
     "version": "0.1.8",
+    "type": "module",
     "description": "A lightweight, responsive Masonry Grid component for SolidJS.",
     "license": "MIT",
+    "main": "dist/index.cjs",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
     "exports": {
         ".": {
             "import": "./dist/index.js",
             "require": "./dist/index.cjs"
         }
     },
-    "main": "dist/index.cjs",
-    "module": "dist/index.js",
-    "types": "dist/index.d.ts",
     "files": [
         "dist"
     ],

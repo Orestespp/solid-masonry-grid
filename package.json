@@ -1,6 +1,6 @@
 {
     "name": "solid-masonry-grid",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "A lightweight, responsive Masonry Grid component for SolidJS.",
     "license": "MIT",
     "type": "module",

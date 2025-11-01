@@ -9,6 +9,11 @@
     "files": [
         "dist"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Orestespp/solid-masonry-grid.git"
+    },
+    "homepage": "https://solid-masonry-grid.netlify.app",
     "scripts": {
         "dev": "vite",
         "start": "vite",

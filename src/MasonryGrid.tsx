@@ -1,6 +1,6 @@
 // MasonryGrid.tsx
-import { type JSX, createSignal, createEffect, onCleanup, onMount, For } from "solid-js";
-
+import { createSignal, createEffect, onCleanup, onMount, For } from "solid-js";
+import type { JSX } from "solid-js"; // correcto para tipos
 type MasonryGridProps<T> = {
     items: T[];
     gap?: number;

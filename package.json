@@ -24,7 +24,7 @@
     "scripts": {
         "dev": "vite",
         "start": "vite",
-        "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+        "build": "tsup",
         "preview": "vite preview",
         "test": "vitest"
     },

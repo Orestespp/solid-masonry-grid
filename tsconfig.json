@@ -2,16 +2,14 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "declaration": true,
     "outDir": "dist",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "strict": true,
-    "isolatedModules": true
   },
   "include": ["src"]
 }

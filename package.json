@@ -4,6 +4,7 @@
   "description": "A lightweight, responsive Masonry Grid component for SolidJS.",
   "license": "MIT",
   "author": "Orestespp",
+  "contributors": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/Orestespp/solid-masonry-grid.git"
@@ -42,18 +43,18 @@
   "scripts": {
     "dev": "vite serve dev",
     "build": "tsup",
-    "test": "concurrently pnpm:test:*",
+    "test": "npm run test:client",
     "test:client": "vitest",
-    "test:ssr": "pnpm run test:client --mode ssr",
-    "prepublishOnly": "pnpm build",
+    "test:ssr": "npm run test:client --mode ssr",
+    "prepublishOnly": "npm run build",
     "format": "prettier --ignore-path .gitignore -w \"src/**/*.{js,ts,json,css,tsx,jsx}\" \"dev/**/*.{js,ts,json,css,tsx,jsx}\"",
-    "lint": "concurrently pnpm:lint:*",
+    "lint": "concurrently npm:lint:*",
     "lint:code": "eslint --ignore-path .gitignore --max-warnings 0 src/**/*.{js,ts,tsx,jsx}",
     "lint:types": "tsc --noEmit",
     "update-deps": "pnpm up -Li"
   },
   "peerDependencies": {
-    "solid-js": "^1.8.18"
+    "solid-js": "^1.6.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
@@ -82,10 +83,5 @@
     "grid",
     "responsive",
     "layout"
-  ],
-  "packageManager": "pnpm@9.1.1",
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=9.0.0"
-  }
+  ]
 }

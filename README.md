@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://solid-masonry-grid.netlify.app" target="_blank">
-    <img width="100%" src="https://assets.solidjs.com/banner?type=Solid Masonry Grid&background=tiles&project=%20" alt="Solid Masonry Grid">
+    <img width="100%" src="https://solid-masonry-grid.netlify.app/banner.svg" alt="Solid Masonry Grid">
   </a>
 </p>
 
